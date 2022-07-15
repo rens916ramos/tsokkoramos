@@ -1,0 +1,203 @@
+@keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+
+.main{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+ 
+
+.cursor{
+  z-index: 999;
+  position: fixed;
+  background: #2696E8;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  pointer-events: none;
+  box-shadow: 0 0 20px #2696E8,
+              0 0 60px #2696E8,
+              0 0 100px #2696E8;
+  animation: colors 5s infinite;
+  transform: translate(-50%, -50%);
+  display: none;
+}
+
+@keyframes colors{
+  0%{
+    filter: hue-rotate(0deg);
+  }
+  100%{
+    filter: hue-rotate(360deg);
+  }
+}
+
+.cursor:before{
+  content: '';
+  position: absolute;
+  background: #2696E8;
+  width: 50px;
+  height: 50px;
+  opacity: 0.2;
+  transform: translate(-30%, -30%);
+  border-radius: 50%;
+}
+  
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: gray;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    background-color: #111;
+  }
+
+.header{
+    animation: fadeIn 3s;
+    font-family: 'Candara';
+    font-size: 60px;
+    text-align: center;
+    padding: 0%;
+    margin: 0%;
+    background-color: white;
+    display: flexbox;
+    flex-direction: column;
+}
+
+.header2{
+    animation: fadeIn 3s;
+    font-family: 'Candara';
+    font-size: 30px;
+    text-decoration: underline;
+    text-align: center;
+    padding: 0%;
+    margin: 0%;
+    background-color: white;
+    display: flexbox;
+    flex-direction: column;
+}
+
+.header3{
+    animation: fadeIn 3s;
+    font-family: 'Candara';
+    font-size: 30px;
+    text-align: center;
+    padding: 0%;
+    margin: 0%;
+    background-color: white;
+    display: flexbox;
+    flex-direction: column;
+}
+
+.frame {
+    animation: fadeIn 8s;
+    height: 500px;
+    width: 500px;
+    overflow: hidden;
+    border-radius: 100%;
+    border-color: orange;
+  }
+  .zoomin img {
+    height: 500px;
+    width: 500px;
+    -webkit-transition: all 2s ease;
+    -moz-transition: all 2s ease;
+    -ms-transition: all 2s ease;
+    transition: all 2s ease;
+  }
+  .zoomin img:hover {
+    width: 550px;
+    height: 550px;
+  } 
+
+.image1{
+    animation: fadeIn 8s;
+    padding: 0%;
+    margin: 0%;
+    width: 600px;
+    height: auto;
+}
+
+.mainborder{
+    border-top-color: gray;
+    border-right-color: orange;
+    border-left-color: orange;
+    border-bottom-color: gray;
+    border-style: solid;
+    border-width: 10px;
+    justify-content: center;
+}
+
+.chapter1{
+    animation: fadeIn 3s;
+    padding-top: 40px;
+    font-family: 'Candara';
+    font-size: 40px;
+    text-align: center;
+}
+
+
+
+
+.tabs{
+    padding-bottom: 20px;
+    flex-direction: row;
+    font-family: 'Candara';
+    font-size: 40px;
+}
+
+.flex-container{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+
+}
+.button {
+  font-family: 'Candara';
+  background-color: transparent;
+  border-color: orange;
+  border-width: 5px;
+  border-radius: 20%;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 24px;
+}
+
+@keyframes heading {
+    
+}
